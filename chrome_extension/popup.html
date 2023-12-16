@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Most Viewed Sites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #typedUrl_div {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 799px;
+            /* Adjust the width as needed */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #message_div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #deals_list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #deals_list li {
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin: 5px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Most Viewed Sites</h2>
+    <div id="message_div"></div>
+    <div id="typedUrl_div"></div>
+    <ul id="deals_list"></ul>
+    <script src="popup.js"></script>
+</body>
+
+</html>
