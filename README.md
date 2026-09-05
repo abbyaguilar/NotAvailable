@@ -1,44 +1,50 @@
-# NotAvailable Chrome Extension
+# NotAvailable
 
-Overview
+An earlier digital-wellbeing prototype combining a Chrome extension, mobile application work, Firebase, and a backend service to explore screen-time awareness and behavior change.
 
-The NotAvailable Chrome Extension is a web browser extension designed to monitor user screentime and provide incentives for reducing time spent on specific URLs. The extension is part of the NotAvailable project, aiming to promote healthier digital habits through gamification and rewards.
+## Overview
 
-Features
+NotAvailable was designed around a simple idea: help users understand how much time they spend on specific websites and encourage healthier digital habits through feedback and rewards.
 
-Screentime Monitoring: Tracks user activity, including visited URLs and time spent on each URL.
-Popup Interface: Displays a popup with insights into the top URLs visited during the current week and a comparison with the previous week.
-Gamification and Incentives: Calculates screentime reduction, generates coupon codes as rewards, and provides feedback to encourage users.
-Server Communication: Sends user activity data to a server for further analysis.
-Deals Display: Shows predefined deals in the popup to incentivize users further.
+The project includes a Chrome extension that tracks browser activity, displays screen-time insights, compares usage over time, and communicates with a local backend service.
 
+## Core Features
 
-Installation
+- Website screen-time tracking
+- Weekly usage summaries
+- Comparison with previous usage
+- Reward / coupon-code prototype
+- Chrome extension popup interface
+- Server communication with Axios
+- Firebase integration
+- Companion application code
 
-Clone the repository:
+## Tech Stack
 
-  git clone https://github.com/abbyaguilar/NotAvailable.git
-  
-Open Google Chrome and go to chrome://extensions/.
+- JavaScript
+- React Native / Expo
+- Chrome Extension APIs
+- Firebase
+- Axios
+- Node / backend service components
 
-Enable "Developer mode" in the top right.
+## Chrome Extension Setup
 
-Click "Load unpacked" and select the directory where the extension code is located.
+Clone the repository, then in Chrome:
 
+1. Open `chrome://extensions/`
+2. Enable **Developer mode**
+3. Choose **Load unpacked**
+4. Select the `chrome_extension` directory
 
-Usage
+For backend-connected features, run the local service expected by the extension.
 
-Once installed, click on the extension icon in the Chrome toolbar to open the popup interface.
+## Project Status
 
-The popup displays the top URLs visited during the current week, along with the time spent on each URL.
+**Earlier prototype / portfolio archive.**
 
-Receive feedback and rewards based on your screentime reduction achievements.
+This repository is retained to show earlier experimentation with browser extensions, mobile development, client-server communication, and digital-wellbeing product ideas. It is not one of my primary current portfolio projects.
 
-Server Integration
+## Creator
 
-The extension communicates with a server running on http://localhost:19008/user-activity. Ensure that the server is running and can handle POST requests from the extension.
-
-Dependencies
-
-Axios: Used for making HTTP requests.
-
+Built by **Abigail Aguilar**
